@@ -25,7 +25,7 @@ const k = width / height; //窗口宽高比
 const s = 200; //三维场景显示范围控制系数，系数越大，显示的范围越大
 const camera = new THREE.OrthographicCamera(-s * k, s * k, s, -s, 1, 1000);
 camera.position.set(200, 300, 200); //设置相机位置
-camera.lookAt(scene.position); //设置相机方向(指向的场景对象)
+camera.lookAt(scene.position); //设置相机方向(指向的场景对象) 
 const renderer = new THREE.WebGLRenderer(); //创建渲染器
 renderer.setSize(width, height); //设置渲染区域尺寸
 renderer.setClearColor(0x000000, 1); //设置背景颜色
